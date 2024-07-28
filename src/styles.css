@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'kumbhSans';
+    src: url('/public/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf');
+}
+
+body{
+    background-color: #FAFAFA;
+    background-image: url('./images/bg-pattern-header.svg');
+    background-size: 1134px 1134px;
+    background-position: right -350px top -419px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0px;
+    padding-top: 81px;
+}
+
+* {
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'kumbhSans'
+}
+
+@media(max-width: 800px){
+    body{
+        background-size: 666px 666px;
+        background-position: right -293px top -164px;
+        padding-top: 72px;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-size: 458px 458px;
+        background-position: center top -170px;
+        padding-top: 46px;
+    }
+}

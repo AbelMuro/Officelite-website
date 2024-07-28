@@ -1,0 +1,127 @@
+.container{
+    width: 1110px;
+    display: flex;
+    gap: 95px;
+    align-items: center;
+    margin: 102px auto 184px auto;
+}
+
+.chart{
+    width: 475px;
+    object-fit: contain; 
+    display: inline-block;
+}
+
+.content{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content > h1{
+    color: #333950;
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0px;
+}
+
+.content > p{
+    color: #747B95;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin: 0px 0px 6px 0px;
+}
+
+.content > button{
+    width: 171px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #5175FF;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.25);
+    border: none;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+
+    .chart{
+        width: 42.7927927928%;
+    }
+}
+
+@media(max-width: 1000px){
+    .container{
+        gap: 65px;
+    }
+
+    .content > h1{
+        font-size: 2.5rem;
+        line-height: 48px;
+    }
+}
+
+@media(max-width: 800px){
+    .container{
+        gap: 63px;
+        margin: 104px auto 140px auto;
+    }
+
+    .content > p{
+        font-size: 1rem;
+        line-height: 26px; /* 162.5% */
+        margin-bottom: 0px;
+    }
+
+    .chart{
+        width: 281px;
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        gap: 33px;
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        flex-direction: column-reverse;
+        gap: 54px;
+        margin: 80px auto 100px auto;
+    }
+
+    .chart{
+        width: 171px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .content > h1{
+        text-align: center;
+    }
+
+    .content > p{
+        text-align: center;
+    }
+
+    .content > button{
+        align-self: center;
+    }
+}
