@@ -2,6 +2,9 @@ import React from 'react';
 import images from './images'
 import * as styles from './styles.module.css';
 
+
+//now i need to implement the subscription options component for this webpage
+
 function Home() {
     return(
         <main className={styles.container}>
