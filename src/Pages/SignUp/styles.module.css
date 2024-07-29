@@ -1,0 +1,19 @@
+.container{
+    width: 1110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+    margin: 126px auto 0px auto;
+}
+
+.background{
+    width: 420px;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: var(--farthest);
+    top: 0px;
+    right: 0px;
+    transition: all 0.2s linear, height 0s;
+}

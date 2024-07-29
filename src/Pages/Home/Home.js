@@ -1,27 +1,23 @@
-import React from 'react';
-import images from './images'
-import * as styles from './styles.module.css';
-
-
-//now i need to implement the subscription options component for this webpage
+import React, {useEffect} from 'react';
+import Introduction from './Introduction';
+import SubscriptionOptions from './SubscriptionOptions';
+import * as styles from  './styles.module.css';
 
 function Home() {
+
+    useEffect(() => {
+        const body = document.body;
+        body.classList.add(styles.body)
+
+        return () => {
+            body.classList.remove(styles.body);
+        }
+    }, [])
+
     return(
-        <main className={styles.container}>
-            <section className={styles.content}>
-                <h1>
-                    A simple solution to complex tasks is coming soon
-                </h1>
-                <p>
-                    Say goodbye to inefficient juggling of multiple apps, 
-                    teams, and projects. Officelite is the new collaboration 
-                    platform built with an intuitive interface to improve productivity.
-                </p>
-                <button>
-                    Get Started
-                </button>
-            </section>
-            <img className={styles.chart} src={images['charts']}/>
+        <main>
+            <Introduction/>
+            <SubscriptionOptions/>
         </main>
     )
 }
