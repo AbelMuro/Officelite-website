@@ -17,3 +17,106 @@
     right: 0px;
     transition: all 0.2s linear, height 0s;
 }
+
+.content{
+    width: 540px;
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > h1{
+    white-space: balance;
+    color: #333950;
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
+    margin: 0px 0px 24px 0px;
+}
+
+.content > p{
+    color: #747B95;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    margin: 0px 0px 40px 0px;
+}
+
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.countdown > h2{
+    color: #333950;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 300% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0px;
+    grid-column: 1/5;
+}
+
+.countdown > h2 > span{
+    color: #5175FF;
+}
+
+.countdown_time{
+    height: 128px;
+    border-radius: 13px;
+    background: rgba(81, 117, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown_time > strong{
+    color: #5175FF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 85.714% */
+}
+
+.countdown_time > p{
+    color: rgba(51, 57, 80, 0.5);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+    margin: 0px;
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+        gap: 45px;
+    }
+}
+
+@media(max-width: 1000px){
+    .countdown{
+        grid-template-columns: repeat(4, 22.3214285714%);
+        column-gap: 8px;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 800px){
+    
+}
