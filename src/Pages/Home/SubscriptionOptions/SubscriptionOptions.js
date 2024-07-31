@@ -5,8 +5,8 @@ import * as styles from './styles.module.css';
 function SubscriptionOptions(){
     const navigate = useNavigate();
 
-    const handleNavigation = () => {
-        navigate('/SignUp');
+    const handleNavigate = (link) => {
+        navigate(link);
     }
 
     return(
@@ -33,7 +33,7 @@ function SubscriptionOptions(){
                             Great security and support
                         </p>
                     </div>
-                    <button>
+                    <button onClick={() => handleNavigate('/SignUp')}>
                         Try for free
                     </button>
                 </li>
@@ -58,7 +58,7 @@ function SubscriptionOptions(){
                             More control and insights
                         </p>
                     </div>
-                    <button>
+                    <button onClick={() => handleNavigate('/SignUp')}>
                         Try for free
                     </button>
                 </li>
@@ -83,7 +83,7 @@ function SubscriptionOptions(){
                             VIP support
                         </p>
                     </div>
-                    <button>
+                    <button onClick={() => handleNavigate('/SignUp')}>
                         Try for free
                     </button>
                 </li>
@@ -126,7 +126,7 @@ function SubscriptionOptions(){
                         </em>
                     </div>
                 </section>
-                <button onClick={handleNavigation}>
+                <button onClick={() => handleNavigate('/SignUp')}>
                     Get Started
                 </button>
             </div>

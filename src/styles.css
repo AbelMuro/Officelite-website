@@ -7,7 +7,8 @@ body{
     background-color: #FAFAFA;
     min-height: 100vh;
     margin: 0px;
-    padding-top: 81px;
+    padding: 81px 0px 1px 0px;
+    position: relative;
 }
 
 * {
@@ -22,4 +23,17 @@ body{
     --close: 50;
     --far: 25;
     --farthest: -1;
+}
+
+
+@media(max-width: 800px){
+    body{
+        padding: 72px 0px 1px 0px;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        padding: 46px 0px 1px 0px;
+    }
 }

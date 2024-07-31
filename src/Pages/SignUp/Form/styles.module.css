@@ -15,6 +15,7 @@
 .submit{
     width: 100%;
     height: 56px;
+    padding: 0px;
     flex-shrink: 0;
     border-radius: 28px;
     background-color: #5175FF;
@@ -33,6 +34,10 @@
     background-color: #829CFF;
 }
 
-@media(max-width: 800px){
-    
+@media(max-width: 650px){
+    .container{
+        width: 327px;
+        height: 465px;
+        padding: 0px 24px;
+    }
 }

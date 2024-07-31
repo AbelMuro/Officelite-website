@@ -1,15 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import useMediaQuery from '~/Hooks/useMediaQuery.js';
 import Form from './Form';
-import images from './images';
 import * as styles from './styles.module.css';
 
-//i will need to work on the responsiveness for tablet
-
 function SignUp(){
+    const [mobile] = useMediaQuery('(max-width: 650px)');
+
+    useEffect(() => {
+        const body = document.body;
+
+        if(mobile)
+            body.classList.add(styles.body);
+        else
+            body.classList.remove(styles.body);
+        
+        return () => {
+            body.classList.remove(styles.body);
+        }
+    }, [mobile])
 
     return(
         <main className={styles.container}>
-            <img className={styles.background} src={images['pattern']}/>
+            <div className={styles.background}></div>
             <section className={styles.content}>
                 <h1>
                     Work smarter. Save time.
